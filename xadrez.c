@@ -6,7 +6,37 @@
 
 int main() {
     // Nível Novato - Movimentação das Peças
-    // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
+    //Área de declarçao de variáveis com nomes apropriados.
+    int torre = 0;
+    int bispo = 0;
+    int rainha;
+
+    // Implemntação da lógica de movimentação para cada peça do jogo.
+
+    //Torre se move 5 casas para frente, usando a estrutura de repetição While.
+    while (torre<5)
+    {
+       printf("Torre - Cima\n");
+       torre++;
+    }
+    printf("\n");  
+    
+    //Bispo se move 5 casas na diagonal, usando a estrutura de repetição do-While.  
+    do{
+       printf("Bispo - Cima, Direita\n");
+       bispo++;
+    }while (bispo<5);
+    printf("\n");
+
+    //Rainha se move 8 casas para esquerda, usando a estrutura de for. 
+    for (rainha = 0; rainha < 8; rainha++)
+    {
+        printf("Rainha - Esquerda\n");
+    }
+    
+    
+    
+
 
     // Implementação de Movimentação do Bispo
     // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
